@@ -1,0 +1,1 @@
+# plugins-restrict-for-elementor
