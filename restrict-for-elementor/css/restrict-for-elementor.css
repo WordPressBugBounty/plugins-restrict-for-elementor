@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'restrict-for-elementor';
+    src: url('../fonts/restrict.eot');
+    src: url('../fonts/restrict.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/restrict.woff') format('woff'),
+         url('../fonts/restrict.ttf') format('truetype'),
+         url('../fonts/restrict.svg#restrict-for-elementor') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.dashicons-restrict-for-elementor:before{
+	display: inline-block;
+   font-family: 'restrict-for-elementor';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+.dashicons-restrict-for-elementor:before{content:'\0041';}

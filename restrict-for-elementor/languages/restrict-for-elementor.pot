@@ -1,0 +1,398 @@
+# Copyright (C) 2024 Restrict
+# This file is distributed under the same license as the Restrict for Elementor plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Restrict for Elementor 1.0.7\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/restrict-for-elementor\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-05-28T12:51:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: restrict-for-elementor\n"
+
+#. Plugin Name of the plugin
+msgid "Restrict for Elementor"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://restrict.io/restrict-for-elementor"
+msgstr ""
+
+#. Description of the plugin
+msgid "Show or hide Elementor sections, columns and widgets with ease using many different criteria"
+msgstr ""
+
+#. Author of the plugin
+msgid "Restrict"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://restrict.io/"
+msgstr ""
+
+#: control.php:93
+msgid "Show or hide content based on the selected criteria"
+msgstr ""
+
+#: control.php:94
+msgid "Action: "
+msgstr ""
+
+#: control.php:97
+msgid "Show"
+msgstr ""
+
+#: control.php:98
+msgid "Hide"
+msgstr ""
+
+#: control.php:118
+msgid "-- No Restrictions --"
+msgstr ""
+
+#: control.php:125
+msgid "Criteria:"
+msgstr ""
+
+#: control.php:149
+msgid "Go Pro"
+msgstr ""
+
+#: free-addons/location.php:16
+msgid "Visitor location"
+msgstr ""
+
+#: free-addons/location.php:98
+msgid "Type:"
+msgstr ""
+
+#: free-addons/location.php:102
+msgid "Country"
+msgstr ""
+
+#: free-addons/location.php:103
+msgid "Continent"
+msgstr ""
+
+#: free-addons/location.php:365
+msgid "Country:"
+msgstr ""
+
+#: free-addons/location.php:394
+msgid "Continent:"
+msgstr ""
+
+#: free-addons/location.php:399
+msgid "Africa"
+msgstr ""
+
+#: free-addons/location.php:400
+msgid "Antarctica"
+msgstr ""
+
+#: free-addons/location.php:401
+msgid "Asia"
+msgstr ""
+
+#: free-addons/location.php:402
+msgid "Europe"
+msgstr ""
+
+#: free-addons/location.php:403
+msgid "North America"
+msgstr ""
+
+#: free-addons/location.php:404
+msgid "Oceania"
+msgstr ""
+
+#: free-addons/location.php:405
+msgid "South America"
+msgstr ""
+
+#: free-addons/logged_in_users.php:12
+#: settings/settings.php:191
+msgid "Logged in users"
+msgstr ""
+
+#: free-addons/post_author.php:12
+msgid "Post author"
+msgstr ""
+
+#: free-addons/user_capability.php:14
+#: settings/settings.php:209
+msgid "Users with specific capability"
+msgstr ""
+
+#: free-addons/user_capability.php:48
+msgid "User Capability:"
+msgstr ""
+
+#: free-addons/user_meta.php:14
+#: settings/settings.php:227
+msgid "Users with specific meta value"
+msgstr ""
+
+#: free-addons/user_meta.php:98
+msgid "Meta Key:"
+msgstr ""
+
+#: free-addons/user_meta.php:129
+msgid "Meta Compare:"
+msgstr ""
+
+#: free-addons/user_meta.php:165
+msgid "Data Type:"
+msgstr ""
+
+#: free-addons/user_meta.php:197
+msgid "Meta Value:"
+msgstr ""
+
+#: free-addons/user_role.php:22
+#: settings/settings.php:244
+msgid "Users with specific role"
+msgstr ""
+
+#: free-addons/user_role.php:85
+msgid "Select user role:"
+msgstr ""
+
+#: index.php:132
+msgid "%1$s requires %2$s version %3$s or greater."
+msgstr ""
+
+#: index.php:134
+msgid "Elementor"
+msgstr ""
+
+#: index.php:252
+msgid "There was an issue determining where %s is installed. Please reinstall it."
+msgstr ""
+
+#: index.php:280
+msgid "%1$s requires %2$s to be installed and activated."
+msgstr ""
+
+#: index.php:282
+msgid "Elementor Website Builder"
+msgstr ""
+
+#: premium-addons/alternative_content.php:97
+msgid "Alternative content type"
+msgstr ""
+
+#: premium-addons/alternative_content.php:101
+msgid "None"
+msgstr ""
+
+#: premium-addons/alternative_content.php:103
+msgid "Elementor Template"
+msgstr ""
+
+#: premium-addons/alternative_content.php:104
+msgid "HTML / Formatted Text"
+msgstr ""
+
+#: premium-addons/alternative_content.php:124
+msgid "Text:"
+msgstr ""
+
+#: premium-addons/alternative_content.php:149
+msgid "HTML Content:"
+msgstr ""
+
+#: premium-addons/alternative_content.php:184
+msgid "Template:"
+msgstr ""
+
+#: premium-addons/edd_users.php:15
+msgid "Easy Digital Downloads users"
+msgstr ""
+
+#: premium-addons/edd_users.php:59
+#: premium-addons/woocommerce_users.php:149
+msgid "Purchased any product"
+msgstr ""
+
+#: premium-addons/edd_users.php:60
+#: premium-addons/woocommerce_users.php:150
+msgid "Purchased a specific product"
+msgstr ""
+
+#: premium-addons/edd_users.php:66
+#: premium-addons/tickera_users.php:71
+#: premium-addons/woocommerce_users.php:161
+msgid "Who:"
+msgstr ""
+
+#: premium-addons/edd_users.php:88
+#: premium-addons/woocommerce_users.php:226
+msgid "Product:"
+msgstr ""
+
+#: premium-addons/tickera_users.php:15
+msgid "Tickera users"
+msgstr ""
+
+#: premium-addons/tickera_users.php:63
+msgid "Purchased any ticket"
+msgstr ""
+
+#: premium-addons/tickera_users.php:64
+msgid "Purchased a specific ticket type"
+msgstr ""
+
+#: premium-addons/tickera_users.php:65
+msgid "Purchased a ticket for specific event"
+msgstr ""
+
+#: premium-addons/tickera_users.php:93
+msgid "Ticket type:"
+msgstr ""
+
+#: premium-addons/tickera_users.php:129
+msgid "Event:"
+msgstr ""
+
+#: premium-addons/woocommerce_users.php:96
+msgid "WooCommerce users"
+msgstr ""
+
+#: premium-addons/woocommerce_users.php:151
+msgid "Purchased a specific product variation"
+msgstr ""
+
+#: premium-addons/woocommerce_users.php:155
+msgid "Has an active subscription"
+msgstr ""
+
+#: premium-addons/woocommerce_users.php:189
+msgid "Subscription Product:"
+msgstr ""
+
+#: premium-addons/woocommerce_users.php:278
+msgid "Product Variation:"
+msgstr ""
+
+#: settings/settings.php:14
+msgid "Simple solution for restricting content of your Elementor-powered WordPress website."
+msgstr ""
+
+#: settings/settings.php:18
+msgid "To start restricting open any page with Elementor editor, select a desired section, column or a widget, click on the Content tab, navigate to the \"%s\" section and choose desired restriction criteria."
+msgstr ""
+
+#: settings/settings.php:21
+msgid "%sLearn more %shere%s or watch the video &#x1F449;%s"
+msgstr ""
+
+#: settings/settings.php:43
+msgid "Features"
+msgstr ""
+
+#: settings/settings.php:45
+#: settings/settings.php:290
+msgid "GO PREMIUM"
+msgstr ""
+
+#: settings/settings.php:65
+#: settings/settings.php:92
+#: settings/settings.php:118
+#: settings/settings.php:144
+#: settings/settings.php:169
+msgid "Go Premium"
+msgstr ""
+
+#: settings/settings.php:71
+msgid "White Label"
+msgstr ""
+
+#: settings/settings.php:72
+msgid "By adding just a single line to your wp-config.php file like this <strong>define('RSC_EL_PLUGIN_TITLE', 'My Restriction Plugin');</strong> the whole plugin will become white labeled and ready for your clients."
+msgstr ""
+
+#: settings/settings.php:97
+msgid "Alternative Content"
+msgstr ""
+
+#: settings/settings.php:98
+msgid "Instead of hiding content entirely, you can display a specific Elementor template or custom formatted text to users that do not fulfill required criteria for viewing a content."
+msgstr ""
+
+#: settings/settings.php:98
+#: settings/settings.php:279
+msgid "Geolocation IP Detection"
+msgstr ""
+
+#: settings/settings.php:124
+msgid "WooCommerce Integration"
+msgstr ""
+
+#: settings/settings.php:125
+msgid "Display different content based on whether a user purchased a specific %sWooCommerce%s product, product variation or has an active subscription via %sWooCommerce Subscriptions%s plugin."
+msgstr ""
+
+#: settings/settings.php:149
+msgid "EDD Integration"
+msgstr ""
+
+#: settings/settings.php:150
+msgid "Show or hide sections, columns or widgets of your page built with Elementor when user purchases a specific %3$s %2$s %4$s product."
+msgstr ""
+
+#: settings/settings.php:150
+msgid "Easy Digital Downloads"
+msgstr ""
+
+#: settings/settings.php:174
+msgid "Tickera Integration"
+msgstr ""
+
+#: settings/settings.php:175
+msgid "With this %3$s %2$s %4$s for WordPress, you can choose criteria to restrict certain sections, columns and widgets for customers who purchased required ticket types or ticket(s) for selected events."
+msgstr ""
+
+#: settings/settings.php:175
+msgid "Event Ticketing System"
+msgstr ""
+
+#: settings/settings.php:192
+msgid "Show or hide different widgets, columns or whole sections based on whether a visitor is logged in or not."
+msgstr ""
+
+#: settings/settings.php:210
+msgid "Show or hide Elementor elements to users with specific capabilities. Very useful if you are using custom capabilities with custom user roles."
+msgstr ""
+
+#: settings/settings.php:228
+msgid "Use any user meta key as condition and use different comparing methods and data types to make the element visible or hidden."
+msgstr ""
+
+#: settings/settings.php:245
+msgid "Want to control which user sees what? User roles can be used as criteria for showing or hiding sections, columns and widgets."
+msgstr ""
+
+#: settings/settings.php:261
+msgid "Post Author"
+msgstr ""
+
+#: settings/settings.php:262
+msgid "Want to make some element visible or hidden to post author only? This one is for you!"
+msgstr ""
+
+#: settings/settings.php:278
+msgid "Geolocation"
+msgstr ""
+
+#: settings/settings.php:279
+msgid "With the %3$s %2$s %4$s plugin integration, you can easily restrict content based on visitor's country or continent of residence."
+msgstr ""
+
+#: settings/settings.php:289
+msgid "Upgrade to the premium version and get all features"
+msgstr ""
