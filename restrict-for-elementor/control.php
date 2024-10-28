@@ -42,31 +42,31 @@ if ( !class_exists( 'Restrict_Elementor_Elementor_Control' ) ) {
             add_filter(
                 'elementor/frontend/section/should_render',
                 array($this, 'elementor_should_render'),
-                10,
+                99,
                 2
             );
             add_filter(
                 'elementor/frontend/column/should_render',
                 array($this, 'elementor_should_render'),
-                10,
+                99,
                 2
             );
             add_filter(
                 'elementor/frontend/widget/should_render',
                 array($this, 'elementor_should_render'),
-                10,
+                99,
                 2
             );
             add_filter(
                 'elementor/frontend/repeater/should_render',
                 array($this, 'elementor_should_render'),
-                10,
+                99,
                 2
             );
             add_filter(
                 'elementor/frontend/container/should_render',
                 array($this, 'elementor_should_render'),
-                10,
+                99,
                 2
             );
             add_action( 'restrict_for_elementor_rest_api', array($this, 'elementor_restrict_rest_api') );

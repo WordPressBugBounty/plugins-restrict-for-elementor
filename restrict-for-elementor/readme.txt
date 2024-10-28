@@ -3,8 +3,8 @@ Contributors: restrict, tickera, freemius
 Donate link: https://restrict.io/restrict-for-elementor
 Tags: elementor, woocommerce, restrict, restricted content, hide content
 Requires at least: 4.3
-Tested up to: 6.5.4
-Stable tag: 1.0.1
+Tested up to: 6.6.2
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,8 +50,12 @@ You can restrict, show and hide widgets, sections and columns to:
 
 == Changelog ==
 
-= 1.0.8 19/06/2024 =
+= 1.0.9 28/10/2024 =
 * Additional REST API security measures.
+* Clearing PHP Deprecated function warnings.
+* Conflict with "Essential Addons for Elementor" plugin. Issue: Section element restriction not working. [Fixed]
+* Updated Freemius to the latest SDK v2.9.0.
+* Freemius SDK patched with PR:730. Patched Freemius SDK v2.9.0.1. Reference PR: https://github.com/Freemius/wordpress-sdk/pull/730/files
 
 = 1.0.7 22/05/2024 =
 * Restrict Visitor's location: "restrict_for_elementor_match_client_ip_location" filter hook to allow developers to set matching instruction (Client IP or Public IP). Default: Public IP
