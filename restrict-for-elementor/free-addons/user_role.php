@@ -15,7 +15,7 @@ if ( !class_exists( 'Restrict_Elementor_Addon_User_Role' ) ) {
 
             if ( is_user_logged_in() ) {
                 global $current_user;
-                return reset( $current_user->roles );
+                return $current_user->roles;
             }
 
             return false;
@@ -34,24 +34,42 @@ if ( !class_exists( 'Restrict_Elementor_Addon_User_Role' ) ) {
 
                 if ( $settings[ 'restrict_for_elementor_show_to' ] == 'user_role' && !empty( $settings[ 'user_role_selection' ] ) ) {
 
+                    $role_found = false;
                     $user_role_selection = $settings[ 'user_role_selection' ];
-                    $current_user_role = Restrict_Elementor_Addon_User_Role::get_current_user_role();
+                    $current_user_roles = Restrict_Elementor_Addon_User_Role::get_current_user_role();
 
-                    if ( $current_user_role ) {
+                    if ( $current_user_roles ) {
+
                         $rsc_user_role = $user_role_selection;
 
-                        foreach ( $rsc_user_role as $key => $value ) {
-                            $rsc_user_role[ $key ] = \Restrict_Elementor::maybe_unserialize( $value );
+                        foreach ( (array) $rsc_user_role as $key => $role ) {
+
+                            $role = \Restrict_Elementor::maybe_unserialize( $role );
+
+                            if ( is_array( $role ) ) {
+
+                                foreach ( $role as $_role ) {
+
+                                    if ( in_array( $_role, $current_user_roles ) ) {
+                                        $should_render = ( $action == 'show' ) ? true : false;
+                                        do_action( 'restrict_for_elementor_rest_api' );
+                                        $role_found = true;
+                                        break 2;
+                                    }
+                                }
+
+                            } else {
+
+                                if ( in_array( $role, $current_user_roles ) ) {
+                                    $should_render = ( $action == 'show' ) ? true : false;
+                                    do_action( 'restrict_for_elementor_rest_api' );
+                                    $role_found = true;
+                                    break;
+                                }
+                            }
                         }
 
-                        if ( is_array( $rsc_user_role[ 0 ] ) ) {
-                            $rsc_user_role = $rsc_user_role[ 0 ];
-                        }
-
-                        if ( is_array( $rsc_user_role ) && in_array( $current_user_role, $rsc_user_role ) ) {
-                            $should_render = ( $action == 'show' ) ? true : false;
-
-                        } else {
+                        if ( ! $role_found ) {
                             $should_render = ( $action == 'show' ) ? false : true;
                             do_action( 'restrict_for_elementor_rest_api' );
                         }
