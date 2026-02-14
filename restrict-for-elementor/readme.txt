@@ -3,8 +3,8 @@ Contributors: restrict, tickera, freemius
 Donate link: https://restrict.io/restrict-for-elementor
 Tags: elementor, woocommerce, restrict, restricted content, hide content
 Requires at least: 4.3
-Tested up to: 6.7.2
-Stable tag: 1.1.1
+Tested up to: 6.9
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,9 @@ You can restrict, show and hide widgets, sections and columns to:
 2. Dashboard / Premium features
 
 == Changelog ==
+
+= 1.1.2 10/02/2026 =
+* Exclude restricted elements from Elementor cache mechanism. Clear cache before rendering restricted elements.
 
 = 1.1.1 28/08/2025 =
 * User Role Editor compatibility.

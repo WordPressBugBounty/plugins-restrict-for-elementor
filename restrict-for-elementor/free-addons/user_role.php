@@ -78,6 +78,8 @@ if ( !class_exists( 'Restrict_Elementor_Addon_User_Role' ) ) {
                         $should_render = ( $action == 'show' ) ? false : true;
                         do_action( 'restrict_for_elementor_rest_api' );
                     }
+
+                    do_action( 'restrict_for_elementor_clear_cache' );
                 }
             }
 

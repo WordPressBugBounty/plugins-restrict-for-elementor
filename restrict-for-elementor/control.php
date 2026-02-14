@@ -70,6 +70,7 @@ if ( !class_exists( 'Restrict_Elementor_Elementor_Control' ) ) {
                 2
             );
             add_action( 'restrict_for_elementor_rest_api', array($this, 'elementor_restrict_rest_api') );
+            add_action( 'restrict_for_elementor_clear_cache', array($this, 'elementor_restrict_clear_cache') );
         }
 
         function widget_render_content( $content, $widget ) {
@@ -197,6 +198,21 @@ if ( !class_exists( 'Restrict_Elementor_Elementor_Control' ) ) {
                     $result->data['excerpt']['rendered'] = $excerpt;
                     return $result;
                 }, 10 );
+            }
+        }
+
+        /**
+         * Clear element cache
+         * @return void
+         */
+        function elementor_restrict_clear_cache() {
+            if ( class_exists( '\\Elementor\\Plugin' ) && did_action( 'elementor/loaded' ) ) {
+                $cache = get_option( 'elementor_element_cache_ttl', true );
+                if ( $cache && 'disable' != $cache ) {
+                    \Elementor\Plugin::$instance->files_manager->clear_cache();
+                    // Executes the cache-clear action only a single time to prevent repeated clearing.
+                    remove_action( 'restrict_for_elementor_clear_cache', array($this, 'elementor_restrict_clear_cache') );
+                }
             }
         }
 

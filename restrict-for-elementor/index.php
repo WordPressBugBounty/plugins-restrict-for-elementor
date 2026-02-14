@@ -6,7 +6,7 @@
  * Description: Show or hide Elementor sections, columns and widgets with ease using many different criteria
  * Author: Restrict
  * Author URI: https://restrict.io/
- * Version: 1.1.1
+ * Version: 1.1.2
  * Elementor tested up to: 3.21.7
  * Elementor Pro tested up to: 3.21.7
  * Text Domain: restrict-for-elementor
